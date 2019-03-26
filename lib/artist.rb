@@ -18,7 +18,7 @@ class Artist
   end
 
   def songs
-    @songs {|song| song.artist == self}
+    @songs.each {|song| song.artist == self}
   end
 
   def self.find_or_create_by_name(name)
